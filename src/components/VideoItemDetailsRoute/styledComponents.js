@@ -136,3 +136,8 @@ export const RetryButton = styled.button`
   height: 32px;
   background-color: #4f46e5;
 `
+export const SideBarMenuContainer = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`

@@ -1,4 +1,5 @@
 import {withRouter} from 'react-router-dom'
+import {FiLogOut} from 'react-icons/fi'
 import Cookies from 'js-cookie'
 import NxtWatchContext from '../../context/NxtWatchContext'
 
@@ -9,6 +10,8 @@ import {
   CancelButton,
   ConfirmButton,
   LogoutButton,
+  MobileButtonIcon,
+  LargeScreenText,
 } from './styledComponents'
 
 const LogoutPopup = props => (
@@ -26,7 +29,14 @@ const LogoutPopup = props => (
         <StyledPopup
           isDarkTheme={isDarkTheme}
           trigger={
-            <LogoutButton isDarkTheme={isDarkTheme}>Logout</LogoutButton>
+            <LogoutButton isDarkTheme={isDarkTheme}>
+              <MobileButtonIcon isDarkTheme={isDarkTheme}>
+                <FiLogOut />
+              </MobileButtonIcon>
+              <LargeScreenText isDarkTheme={isDarkTheme}>
+                Logout
+              </LargeScreenText>
+            </LogoutButton>
           }
           modal
         >

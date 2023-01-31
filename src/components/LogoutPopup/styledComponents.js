@@ -1,5 +1,5 @@
 import Popup from 'reactjs-popup'
-// import {FiLogOut} from 'react-icons/fi'
+
 import styled from 'styled-components'
 
 export const StyledPopup = styled(Popup)`
@@ -52,8 +52,12 @@ export const LogoutButton = styled.button`
   border-radius: 2px;
   background-color: transparent;
   color: ${props => (props.isDarkTheme ? '#ffffff' : '#3b82f6')};
+  @media screen and (max-width: 767px) {
+    border: none;
+    width: 30px;
+  }
 `
-export const MobileButton = styled.button`
+export const MobileButtonIcon = styled.span`
   color: ${props => (props.isDarkTheme ? '#ffffff' : '#475569')};
   background-color: transparent;
   margin-right: 10px;
@@ -63,6 +67,11 @@ export const MobileButton = styled.button`
   align-items: center;
   margin-top: 10px;
   @media screen and (min-width: 768px) {
+    display: none;
+  }
+`
+export const LargeScreenText = styled.span`
+  @media screen and (max-width: 767px) {
     display: none;
   }
 `

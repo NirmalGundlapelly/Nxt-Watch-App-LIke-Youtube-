@@ -5,6 +5,9 @@ export const VideoCardBgContainer = styled.li`
   margin: 12px 16px 16px 0;
   min-height: 280px;
   width: 240px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `
 export const VideoCardThumbnail = styled.img`
   width: 100%;

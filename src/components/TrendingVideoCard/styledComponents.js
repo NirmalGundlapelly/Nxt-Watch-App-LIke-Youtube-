@@ -4,6 +4,10 @@ import {Link} from 'react-router-dom'
 export const TrendingVideoCardContainer = styled.li`
   display: flex;
   margin-bottom: 64px;
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 export const TrendingVideoThumbnail = styled.img`
   width: 280px;

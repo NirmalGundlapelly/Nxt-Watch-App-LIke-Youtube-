@@ -27,7 +27,6 @@ class App extends Component {
 
   // Removing Saved Videos Function
   removeSavedVideos = videoDetails => {
-    console.log(videoDetails)
     const {id} = videoDetails
     const {savedVideosList} = this.state
     const updatedSavedVideosList = savedVideosList.filter(

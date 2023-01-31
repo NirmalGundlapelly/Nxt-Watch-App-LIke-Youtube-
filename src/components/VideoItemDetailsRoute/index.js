@@ -31,6 +31,7 @@ import {
   ErrorText,
   ErrorDescription,
   RetryButton,
+  SideBarMenuContainer,
 } from './styledComponents'
 
 const status = {
@@ -290,7 +291,9 @@ class VideoItemDetailsRoute extends Component {
                 isDarkTheme={isDarkTheme}
                 data-testid="videoItemDetails"
               >
-                <SideBarMenu />
+                <SideBarMenuContainer>
+                  <SideBarMenu />
+                </SideBarMenuContainer>
 
                 <VideoPlayerContainer>
                   {loadingStatus === status.loading

@@ -15,6 +15,9 @@ export const SearchContainer = styled.div`
   align-items: center;
   border: 1px solid ${props => (props.isDarkTheme ? '#424242' : '#cbd5e1')};
   width: 320px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `
 export const SearchInput = styled.input`
   width: 85%;
