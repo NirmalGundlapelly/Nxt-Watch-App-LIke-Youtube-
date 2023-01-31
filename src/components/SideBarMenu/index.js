@@ -87,7 +87,7 @@ const SideBarMenu = () => (
                   <MdPlaylistAdd />
                 </NavLinkIconContainer>
                 <NavLinkText isDarkTheme={isDarkTheme}>
-                  Saved videos
+                  Saved Videos
                 </NavLinkText>
               </SideBarNavLink>
             </li>
